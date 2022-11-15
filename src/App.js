@@ -13,6 +13,7 @@ function App() {
 
   const openModal = () => {
     setModalActive(true)
+    setNavActive(false)
   }
 
   const closeModal = () => {
@@ -33,7 +34,7 @@ function App() {
 
   return (
     <>
-    <MobileNav navActive={navActive} closeNav={closeNav} />
+    <MobileNav navActive={navActive} closeNav={closeNav} openModal={openModal} />
     <Navbar openModal={openModal} openNav={openNav} />
     <Routes>
        <Route path='/' element={<Home />} />

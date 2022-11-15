@@ -3,7 +3,7 @@ import { FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Metabnb from '../assets/images/metabnb-white-logo.svg'
 
-const MobileNav = ({navActive, closeNav}) => {
+const MobileNav = ({navActive, closeNav, openModal}) => {
   return (
     <div className={`mobile-nav p-3 ${navActive ? 'active' : ""}`}>
       <div className="text-end close">
@@ -31,7 +31,7 @@ const MobileNav = ({navActive, closeNav}) => {
             <Link to="/">Community</Link>
           </li>
         </ul>
-        <button className="main-btn">Connect Wallet</button>
+        <button className="main-btn" onClick={openModal}>Connect Wallet</button>
       </div>
       <div className="text-center">
          <img src={Metabnb} className='w-[100px] mx-auto mb-3' alt="logo" />

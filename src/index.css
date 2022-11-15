@@ -172,7 +172,8 @@
 }
 
 .hamburger span {
-  background-color: rgba(91, 106, 119, 0.95);
+  /* background-color: rgba(91, 106, 119, 0.95); */
+  background-color: #A02279;
   display: block;
   height: 0.133em;
   margin-bottom: 0.28em;
@@ -192,4 +193,40 @@
 .hamburger span:nth-of-type(3) {
    width: 1.5em;
    margin-left: -3px;
+}
+
+/* MOBILE NAV  */
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 1);
+  z-index: 1000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s all ease-in;
+}
+
+.mobile-nav.active {
+ left: 0;
+}
+
+.mobile-nav .close span {
+  font-size: 20px;
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.mobile-nav-body {
+  flex-grow: 1;
+}
+
+.mobile-nav-body ul li {
+  font-size: 28px;
+  line-height: 45px;
+  margin-bottom: 10px
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import { FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import Metabnb from '../assets/images/metabnb-white-logo.svg'
+import Metabnb from '../assets/images/metabnb-logo.png'
 
 const MobileNav = ({navActive, closeNav, openModal}) => {
   return (

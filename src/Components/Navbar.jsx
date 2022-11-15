@@ -4,9 +4,9 @@ import MetaBnb from "../assets/images/metabnb-logo.png";
 
 const Navbar = ({openModal}) => {
   return (
-    <div className="container hidden md:flex mx-auto py-5 justify-between items-center">
+    <div className="container flex mx-auto py-5 justify-between items-center px-5">
       <img src={MetaBnb} alt="metabnb logo" />
-      <ul className="nav-list">
+      <ul className="nav-list hidden lg:flex gap-8">
         <li>
           <Link to="/">Home</Link>
         </li>
@@ -20,7 +20,12 @@ const Navbar = ({openModal}) => {
           <Link to="/">Community</Link>
         </li>
       </ul>
-      <button className="main-btn" onClick={openModal}>Connect Wallet</button>
+      <button className="main-btn hidden lg:block" onClick={openModal}>Connect Wallet</button>
+      <div className="hamburger lg:hidden ">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   );
 };

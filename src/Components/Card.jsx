@@ -1,12 +1,25 @@
-import React from 'react' 
+import React, { useState } from 'react' 
+import { FaHeart } from 'react-icons/fa'
 import Star from '../assets/images/star.png'
 
 const Card = ({imgSrc}) => {
+    const [isFavorite, SetIsFavorite] = useState(false)
+    const selectFavorite = () => {
+        SetIsFavorite((prev) => !prev)
+    }
   return (
     <div className='p-4 card-box'>
         <div>
             <div className='card-box-img mb-4'>
                 <img src={imgSrc} alt="location img" />
+                <span className="favorite" onClick={selectFavorite}>
+                    {
+                        isFavorite && <FaHeart className='checked' />
+                    }
+                    {
+                        !isFavorite && <FaHeart className='unchecked' />
+                    }
+                </span>
             </div>
             <div className=' text-[#434343]'>
                 <div className='flex justify-between items-center mb-2'>

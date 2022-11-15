@@ -27,15 +27,15 @@ const Home = () => {
   return (
     <div className="">
       <section className="min-h-[50vh] py-20">
-        <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 px-3 gap-8">
+        <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 px-6 lg:px-0 gap-8">
           <div className="flex items-center">
             <div className="w-full">
-              <h1 className="text-[56px] tracking-tight leading-[140%] mb-5 font-normal text-[#434343]">
+              <h1 className="text-[44px] sm:text-[56px] tracking-tight leading-[140%] mb-5 font-normal text-[#434343]">
                 Rent a <span className="tx-purple font-bold">Place</span> away from{" "}
                 <span className="tx-purple font-bold">Home</span> in the{" "}
                 <span className="tx-purple font-bold">Metaverse</span>
               </h1>
-              <p className="mb-10 text-2xl leading-[35px] font-normal text-[#434343]">
+              <p className="mb-10 text-xl leading-[35px] font-normal text-[#434343]">
                 we provide you access to luxury and affordable houses in the
                 metaverse, get a chance to turn your imagination to reality at
                 your comfort zone
@@ -56,10 +56,10 @@ const Home = () => {
         </div>
       </section>
       <PurpleBanner />
-      <section className="min-h-[50vh] py-14 px-3">
+      <section className="min-h-[50vh] py-14 px-6 lg:px-0">
         <div className="container mx-auto">
           <div className="text-center">
-            <h2 className="text-5xl font-bold mb-8">
+            <h2 className="text-4xl sm:text-5xl font-bold mb-8">
               Inspiration for your next adventure
             </h2>
           </div>
@@ -72,10 +72,10 @@ const Home = () => {
         </div>
       </section>
       <section className="nft-section py-20">
-        <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 px-3 gap-8">
+        <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 px-6 lg:px-0 gap-8">
           <div className="flex items-center">
-            <div className="w-4/5">
-              <h2 className="text-5xl mb-7 font-bold">Metabnb NFTs</h2>
+            <div className="w-full sm:w-4/5">
+              <h2 className="text-4xl sm:text-5xl mb-7 font-bold">Metabnb NFTs</h2>
               <p className="mb-10 text-lg font-normal">
                 Discover our NFT gift cards collection. Loyal customers gets
                 amazing gift cards which are traded as NFTs. These NFTs gives

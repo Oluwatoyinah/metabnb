@@ -48,7 +48,7 @@ const Card = ({ imgSrc, hash }) => {
               available for 2weeks stay
             </span>
           </div>
-          <div>
+          <div className="mb-2">
             <img src={Star} alt="rating" />
           </div>
         </div>

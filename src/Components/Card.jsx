@@ -28,7 +28,7 @@ const Card = ({ imgSrc, hash }) => {
           <img className={`${isLoaded ? '' : 'hidden'}`} src={imgSrc} onLoad={() => setIsLoaded(true)} alt="location img" />
           <span className="favorite" onClick={selectFavorite}>
             {isFavorite && <FaHeart className="checked" strokeWidth={2} stroke="#000" fill="#ff0000" />}
-            {!isFavorite && <FaHeart className="unchecked"  strokeWidth={2} stroke="#000" />}
+            {!isFavorite && <FaHeart className="unchecked" strokeWidth={2} stroke="#000" />}
           </span>
         </div>
         <div className=" text-[#434343]">

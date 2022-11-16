@@ -39,7 +39,7 @@ const cardImages = [
 const PlaceToStay = () => {
   return (
     <>
-      <section className="min-h-[50vh] py-14 px-3">
+      <section className="min-h-[50vh] py-8 md:py-14 px-3">
         <div className="container mx-auto">  
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 lg:grid-cols-9 py-6 items-center">
           <span className="font-normal text-base text-[#434343]">Resturant</span>

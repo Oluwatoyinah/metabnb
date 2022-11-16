@@ -6,7 +6,7 @@ const Navbar = ({openModal, openNav}) => {
   return (
     <div className="container flex mx-auto py-5 justify-between items-center px-5 md:px-0">
       <img src={MetaBnb} className='w-[180px] sm:w-[230px]' alt="metabnb logo" />
-      <ul className="nav-list hidden lg:flex gap-8">
+      <ul className="nav-list hidden lg:flex gap-10">
         <li>
           <Link to="/">Home</Link>
         </li>

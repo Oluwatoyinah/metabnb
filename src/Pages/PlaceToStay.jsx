@@ -19,23 +19,72 @@ import Card from "../Components/Card";
 import Settings from '../assets/images/settings.png'
 
 const cardImages = [
-  cardImg1,
-  cardImg2,
-  cardImg3,
-  cardImg4,
-  cardImg5,
-  cardImg6,
-  cardImg7,
-  cardImg8,
-  cardImg9,
-  cardImg10,
-  cardImg11,
-  cardImg12,
-  cardImg13,
-  cardImg14,
-  cardImg15,
-  cardImg16,
+  {
+    imgUrl: cardImg1,
+    hash: 'L5B3Q}0LH@}u;VMxyB-XrXx]IoaK'
+  },
+  {
+    imgUrl: cardImg2,
+    hash: 'LYIEb{nlD{R%subEW9ajEFWroFo0'
+  },
+  {
+    imgUrl: cardImg3,
+    hash: 'L56uMBf900R$t.ogR5Ri00WV~Wj?'
+  },
+  {
+    imgUrl: cardImg4,
+    hash: 'LPA^CbspD%Sx%QjbV?kBD*fixpah'
+  },
+  {
+    imgUrl: cardImg5,
+    hash: 'LID9Z4bX0CnPKlkDrWi_0CjZ~3X8'
+  },
+  {
+    imgUrl: cardImg6,
+    hash: 'LB8WqRAE4-,nS.bHsjni0gxG?EI='
+  },
+  {
+    imgUrl: cardImg7,
+    hash: 'LMD9b]JC01xrtpahnzof0ew]-oNd'
+  },
+  {
+    imgUrl: cardImg8,
+    hash: 'L47,j1xG00Rj^ms.9uNM0gn}}*Ey'
+  },
+  {
+    imgUrl: cardImg9,
+    hash: 'LQH_BCWZD{aJ^8R-ORt25Lj?x7of'
+  },
+  {
+    imgUrl: cardImg10,
+    hash: 'L68Eoc%N00NLDhRhr:V{00N1_M$|'
+  },
+  {
+    imgUrl: cardImg11,
+    hash: 'LDOV[YtQ.8xbyCt7e.Rk.mWVMdWB'
+  },
+  {
+    imgUrl: cardImg12,
+    hash: 'LbN11Sfk_Na#%2f5S5fl%hj[IUWC'
+  },
+  {
+    imgUrl: cardImg13,
+    hash: 'L58gvr-i009KGIjFvykW04E2~S?Y'
+  },
+  {
+    imgUrl: cardImg14,
+    hash: 'LXF}ReWAMroa#woZR}a$I6kEozad'
+  },
+  {
+    imgUrl: cardImg15,
+    hash: 'LAB|8XSm02t30JV:=.i{01%O~pM{'
+  },
+  {
+    imgUrl: cardImg16,
+    hash: 'LFH^=so{0HMy^-j=i^kD0YV[-Lt8'
+  }
 ]
+
 const PlaceToStay = () => {
   return (
     <>
@@ -59,7 +108,7 @@ const PlaceToStay = () => {
         </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {cardImages.map((_, i) => (
-              <Card key={i} imgSrc={_} />
+              <Card key={i} imgSrc={_.imgUrl} hash={_.hash} />
             ))}
           </div>
         </div>

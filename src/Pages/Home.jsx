@@ -11,16 +11,41 @@ import cardImg5 from '../assets/images/location/5.png'
 import cardImg6 from '../assets/images/location/6.png'
 import cardImg7 from '../assets/images/location/7.png'
 import cardImg8 from '../assets/images/location/8.png'
+ 
 
 const cardImages = [
-  cardImg1,
-  cardImg2,
-  cardImg3,
-  cardImg4,
-  cardImg5,
-  cardImg6,
-  cardImg7,
-  cardImg8,
+  {
+    imgUrl: cardImg1,
+    hash: 'LID9Z5bX0DnPKlkDrWi_0DjZ~3X8'
+  },
+  {
+    imgUrl: cardImg2,
+    hash: 'LB8WqRAE4-,nS.bHsjni0gxG?EI='
+  },
+  {
+    imgUrl: cardImg3,
+    hash: 'LMD9b]JC01xrtpahnzof0ew]-oNd'
+  },
+  {
+    imgUrl: cardImg4,
+    hash: 'L47,j1xG00Rj^ms.9uNM0gn}}*Ey'
+  },
+  {
+    imgUrl: cardImg5,
+    hash: 'L5B3Q}0LH@}u;VMxyB-XrXx]IoaK'
+  },
+  {
+    imgUrl: cardImg6,
+    hash: 'LYIEb{nlD{R%subEW9ajEFWroFo0'
+  },
+  {
+    imgUrl: cardImg7,
+    hash: 'L56uMBf900R$t.ogR5Ri00WV~Wj?'
+  },
+  {
+    imgUrl: cardImg8,
+    hash: 'LPA^CbspD%Sx%QjbV?kBD*fixpah'
+  }, 
 ]
 
 const Home = () => {
@@ -66,7 +91,7 @@ const Home = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {cardImages.map((_, i) => (
-                <Card key={i} imgSrc={_} />
+                <Card key={i} imgSrc={_.imgUrl} hash={_.hash} />
               ))}
           </div>
         </div>

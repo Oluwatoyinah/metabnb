@@ -34,16 +34,16 @@ function App() {
 
   return (
     <>
-    <MobileNav navActive={navActive} closeNav={closeNav} openModal={openModal} />
-    <Navbar openModal={openModal} openNav={openNav} />
-    <Routes>
-       <Route path='/' element={<Home />} />
-       <Route path='/place-to-stay' element={<PlaceToStay />} />
-    </Routes>
-    <Footer />
-    {
-      modalActive && <Modal closeModal={closeModal} />
-    }
+      <MobileNav navActive={navActive} closeNav={closeNav} openModal={openModal} />
+      <Navbar openModal={openModal} openNav={openNav} />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/place-to-stay' element={<PlaceToStay />} />
+      </Routes>
+      <Footer />
+      {
+        modalActive && <Modal closeModal={closeModal} />
+      }
     </>
   );
 }

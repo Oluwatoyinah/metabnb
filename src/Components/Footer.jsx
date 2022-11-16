@@ -3,6 +3,7 @@ import MetaBnb from '../assets/images/metabnb-white-logo.svg'
 import Facebook from '../assets/images/facebook.png'
 import Instagram from '../assets/images/instagram.png'
 import Twitter from '../assets/images/twitter.png'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -18,29 +19,44 @@ const Footer = () => {
         </div>
         <div>
           <ul>
-            <li>Community</li>
-            <li>NFT</li>
-            <li>Tokens</li>
-            <li>Landlords</li>
-            <li>Discord</li>
+            <li>
+              <Link to='/'>Community</Link></li>
+            <li>
+              <Link to='/'>NFT</Link></li>
+            <li>
+              <Link to='/'>Tokens</Link></li>
+            <li>
+              <Link to='/'>Landlords</Link></li>
+            <li>
+              <Link to='/'>Discord</Link></li>
           </ul>
         </div>
         <div>
           <ul>
-            <li>Places</li>
-            <li>Castle</li>
-            <li>Farms</li>
-            <li>Beach</li>
-            <li>Learn More</li>
+            <li>
+              <Link to='/'>Places</Link></li>
+            <li>
+              <Link to='/'>Castle</Link></li>
+            <li>
+              <Link to='/'>Farms</Link></li>
+            <li>
+              <Link to='/'>Beach</Link></li>
+            <li>
+              <Link to='/'>Learn More</Link></li>
           </ul>
         </div>
         <div>
           <ul>
-            <li>About Us</li>
-            <li>Road map</li>
-            <li>Creators</li>
-            <li>Career</li>
-            <li>Contact us</li>
+            <li>
+              <Link to='/'>About Us</Link></li>
+            <li>
+              <Link to='/'>Road map</Link></li>
+            <li>
+              <Link to='/'>Creators</Link></li>
+            <li>
+              <Link to='/'>Career</Link></li>
+            <li>
+              <Link to='/'>Contact us</Link></li>
           </ul>
         </div> 
       </div>

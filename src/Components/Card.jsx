@@ -32,7 +32,7 @@ const Card = ({ imgSrc, hash }) => {
           </span>
         </div>
         <div className=" text-[#434343]">
-          <div className="flex justify-between items-center mb-2">
+          <div className="flex justify-between items-center mb-3">
             <span className="text-xs leading-[13px] font-normal">
               Desert king
             </span>
